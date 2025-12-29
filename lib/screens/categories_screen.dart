@@ -17,29 +17,12 @@ class CategoriesScreen extends StatelessWidget {
       ),
       body: Consumer<ProductProvider>(
         builder: (context, productProvider, _) {
-          return GridView.builder(
+          return ListView.builder(
             padding: const EdgeInsets.all(16),
-            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
-              crossAxisSpacing: 12,
-              mainAxisSpacing: 12,
-              childAspectRatio: 0.95,
-            ),
             itemCount: productProvider.categories.length,
             itemBuilder: (context, index) {
               final category = productProvider.categories[index];
-              return GestureDetector(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) =>
-                          CategoryProductsScreen(category: category),
-                    ),
-                  );
-                },
-                child: CategoryCard(category: category, isLarge: true),
-              );
+              return CategoryCard(category: category);
             },
           );
         },

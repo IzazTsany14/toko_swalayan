@@ -18,6 +18,14 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
   final _phoneController = TextEditingController();
   String _selectedPayment = 'cash';
   bool _isLoading = false;
+  double _temporaryPrice = 0.0;
+
+  @override
+  void initState() {
+    super.initState();
+    final cartProvider = context.read<CartProvider>();
+    _temporaryPrice = cartProvider.totalPrice;
+  }
 
   @override
   void dispose() {
@@ -25,6 +33,12 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
     _addressController.dispose();
     _phoneController.dispose();
     super.dispose();
+  }
+
+  void _updateTemporaryPrice(double newPrice) {
+    setState(() {
+      _temporaryPrice = newPrice;
+    });
   }
 
   Future<void> _processOrder() async {
@@ -47,7 +61,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
       final order = Order(
         id: DateTime.now().millisecondsSinceEpoch.toString(),
         items: List.from(cartProvider.cartItems),
-        totalPrice: cartProvider.totalPrice,
+        totalPrice: _temporaryPrice, // Use temporary price
         orderDate: DateTime.now(),
         status: 'pending',
         notes:

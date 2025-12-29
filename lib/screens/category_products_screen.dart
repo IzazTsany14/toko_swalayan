@@ -46,15 +46,9 @@ class _CategoryProductsScreenState extends State<CategoryProductsScreen> {
             widget.category.id,
           );
 
-          return GridView.builder(
+          return ListView.builder(
             padding: const EdgeInsets.all(16),
             controller: _scrollController,
-            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
-              crossAxisSpacing: 12,
-              mainAxisSpacing: 12,
-              childAspectRatio: 0.6,
-            ),
             itemCount: products.length,
             itemBuilder: (context, index) {
               return ProductCard(product: products[index]);

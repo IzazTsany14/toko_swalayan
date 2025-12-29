@@ -220,16 +220,10 @@ class _HomeScreenState extends State<HomeScreen> {
             Consumer<ProductProvider>(
               builder: (context, productProvider, _) {
                 final products = productProvider.getPopularProducts(limit: 6);
-                return GridView.builder(
+                return ListView.builder(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   shrinkWrap: true,
                   physics: const NeverScrollableScrollPhysics(),
-                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2,
-                    crossAxisSpacing: 12,
-                    mainAxisSpacing: 12,
-                    childAspectRatio: 0.6,
-                  ),
                   itemCount: products.length,
                   itemBuilder: (context, index) {
                     return ProductCard(product: products[index]);
