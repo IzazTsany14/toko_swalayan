@@ -57,7 +57,7 @@ class _SplashScreenState extends State<SplashScreen> {
               ),
               const SizedBox(height: 24),
               Text(
-                'Toko Swalayan',
+                'Toko Sri Mulyo',
                 style: Theme.of(context).textTheme.displayMedium?.copyWith(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
@@ -66,7 +66,7 @@ class _SplashScreenState extends State<SplashScreen> {
               ),
               const SizedBox(height: 12),
               Text(
-                'Belanja Kebutuhan Sehari-hari',
+                'Optimalisasi pengecekan harga barang sehari-hari',
                 style: Theme.of(context).textTheme.titleMedium?.copyWith(
                       color: Colors.white70,
                     ),
