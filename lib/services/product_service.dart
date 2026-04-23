@@ -131,10 +131,10 @@ class ProductService {
       ),
       Product(
         id: '6',
-        name: 'Penghapus Noda Vanish 500ml',
+        name: ' Vanish 500ml',
         categoryId: '1',
         categoryName: 'Kebutuhan Rumah Tangga',
-        price: 28000,
+        price: 5000,
         description: 'Penghapus noda efektif untuk pakaian putih dan berwarna',
         imageUrl:
             'https://images.pexels.com/photos/3962287/pexels-photo-3962287.jpeg',
@@ -157,10 +157,10 @@ class ProductService {
       ),
       Product(
         id: '8',
-        name: 'Sapu Lidi Premium Jumbo',
+        name: 'Sapu Lidi',
         categoryId: '1',
         categoryName: 'Kebutuhan Rumah Tangga',
-        price: 42000,
+        price: 10000,
         description: 'Sapu lidi premium dengan desain ergonomis',
         imageUrl:
             'https://images.pexels.com/photos/3962281/pexels-photo-3962281.jpeg',
@@ -170,10 +170,10 @@ class ProductService {
       ),
       Product(
         id: '9',
-        name: 'Ember Plastik 20L',
+        name: 'Ember plastik',
         categoryId: '1',
         categoryName: 'Kebutuhan Rumah Tangga',
-        price: 35000,
+        price: 10000,
         description: 'Ember plastik berkualitas untuk berbagai keperluan',
         imageUrl:
             'https://images.pexels.com/photos/3962284/pexels-photo-3962284.jpeg',
