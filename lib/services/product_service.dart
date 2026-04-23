@@ -183,11 +183,11 @@ class ProductService {
       ),
       Product(
         id: '10',
-        name: 'Sikat WC Dengan Holder',
+        name: 'Sikat WC pegangan',
         categoryId: '1',
         categoryName: 'Kebutuhan Rumah Tangga',
         price: 18000,
-        description: 'Sikat WC berkualitas dengan holder yang kokoh',
+        description: 'Sikat WC berkualitas dengan pegangan yang kokoh',
         imageUrl:
             'https://images.pexels.com/photos/3962282/pexels-photo-3962282.jpeg',
         rating: 4.5,
@@ -222,11 +222,11 @@ class ProductService {
       ),
       Product(
         id: '13',
-        name: 'Pembuang Sampah Stainless 20L',
+        name: 'Pembuang Sampah plastik 1x10',
         categoryId: '1',
         categoryName: 'Kebutuhan Rumah Tangga',
-        price: 85000,
-        description: 'Tempat sampah stainless dengan desain modern',
+        price: 35000,
+        description: 'Tempat sampah plastik dengan desain modern',
         imageUrl:
             'https://images.pexels.com/photos/3962289/pexels-photo-3962289.jpeg',
         rating: 4.6,
@@ -263,10 +263,10 @@ class ProductService {
       // KATEGORI 2: Bumbu Dapur (15 produk)
       Product(
         id: '16',
-        name: 'Garam Himalaya 500gr',
+        name: 'Garam g halus',
         categoryId: '2',
         categoryName: 'Bumbu Dapur',
-        price: 25000,
+        price: 3000,
         description: 'Garam Himalaya premium untuk memasak',
         imageUrl:
             'https://images.pexels.com/photos/5732481/pexels-photo-5732481.jpeg',
@@ -354,11 +354,11 @@ class ProductService {
       ),
       Product(
         id: '23',
-        name: 'Cengkeh 50gr',
+        name: 'kayu manis 50gr',
         categoryId: '2',
         categoryName: 'Bumbu Dapur',
         price: 32000,
-        description: 'Cengkeh berkualitas untuk bumbu masakan',
+        description: 'kayu manis berkualitas untuk bumbu masakan',
         imageUrl:
             'https://images.pexels.com/photos/3728166/pexels-photo-3728166.jpeg',
         rating: 4.6,
