@@ -209,11 +209,11 @@ class ProductService {
       ),
       Product(
         id: '12',
-        name: 'Kuas Cuci Piring Set 3 Pcs',
+        name: 'spons Cuci Piring Set 3 Pcs',
         categoryId: '1',
         categoryName: 'Kebutuhan Rumah Tangga',
         price: 22000,
-        description: 'Kuas cuci piring dengan bulu lembut dan tahan lama',
+        description: 'spons cuci piring dengan bulu lembut dan tahan lama',
         imageUrl:
             'https://images.pexels.com/photos/3962288/pexels-photo-3962288.jpeg',
         rating: 4.3,
@@ -566,11 +566,11 @@ class ProductService {
       ),
       Product(
         id: '39',
-        name: 'Marshmallow Putih 100gr',
+        name: 'youka 100gr',
         categoryId: '3',
         categoryName: 'Snack',
         price: 16000,
-        description: 'Marshmallow empuk dan lezat',
+        description: 'youka empuk dan lezat',
         imageUrl:
             'https://images.pexels.com/photos/5836770/pexels-photo-5836770.jpeg',
         rating: 4.5,
